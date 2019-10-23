@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/wi_fi_admin_local
+    username: ms_tfs_logistics_local
+    password:
+  jpa:
+    show-sql: true
