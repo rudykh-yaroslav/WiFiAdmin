@@ -6,7 +6,7 @@
 ## Deploy
 ### TLDR;
 ```shell script
-heroku git:remote -a wifi-analyzer
+heroku git:remote -a wifi-admin
 ```
 Then deploy.
 

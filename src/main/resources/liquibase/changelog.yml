@@ -5,3 +5,5 @@ databaseChangeLog:
       file: liquibase/HNG-001.sql
   - include:
       file: liquibase/HNG-002.sql
+  - include:
+      file: liquibase/HGS-02-create-user-table.sql
