@@ -2,7 +2,8 @@ CREATE TABLE public.user
 (
     id       bigint PRIMARY KEY,
     login    varchar NOT NULL,
-    password varchar NOT NULL
+    password varchar NOT NULL,
+    token    varchar
 );
 
 CREATE TABLE public.role
