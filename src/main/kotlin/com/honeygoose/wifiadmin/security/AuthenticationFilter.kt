@@ -9,18 +9,17 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.context.SecurityContextHolder
 import javax.servlet.FilterChain
 
-
 class AuthenticationFilter(requiresAuthenticationRequestMatcher: RequestMatcher?) : AbstractAuthenticationProcessingFilter(requiresAuthenticationRequestMatcher) {
     override fun attemptAuthentication(request: HttpServletRequest?, response: HttpServletResponse?): Authentication {
-        val headerName = "Bearer"
-        val authorization = request?.getHeader(headerName)
-        val token = authorization?.removePrefix(headerName)
+        val authorization = request?.getHeader("AUTHORIZATION")
+        val token = authorization?.removePrefix("Bearer")?.trim()
         val requestAuthentication = UsernamePasswordAuthenticationToken(token, token)
         return authenticationManager.authenticate(requestAuthentication)
     }
 
+    // todo: this method and AuthenticationProvider.retrieveUser called twice
     override fun successfulAuthentication(request: HttpServletRequest?, response: HttpServletResponse?, chain: FilterChain?, authResult: Authentication?) {
-        SecurityContextHolder.getContext().authentication = authResult;
-        chain?.doFilter(request, response);
+        SecurityContextHolder.getContext().authentication = authResult
+        chain?.doFilter(request, response)
     }
 }

@@ -8,14 +8,14 @@ import org.springframework.security.core.authority.AuthorityUtils
 import org.springframework.security.core.userdetails.User
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UsernameNotFoundException
+import org.springframework.stereotype.Service
 
-class AuthenticationProvider : AbstractUserDetailsAuthenticationProvider() {
-    lateinit var userService: UserService
-
+@Service
+class AuthenticationProvider(var userService: UserService) : AbstractUserDetailsAuthenticationProvider() {
     override fun retrieveUser(username: String?, authentication: UsernamePasswordAuthenticationToken?): UserDetails {
         if (authentication == null || authentication.credentials == null
                 || authentication.credentials !is String) {
-            throw UsernameNotFoundException("")
+            throw UsernameNotFoundException("No credentials")
         }
         try {
             val foundUser = userService.findByToken(authentication.credentials as String)
