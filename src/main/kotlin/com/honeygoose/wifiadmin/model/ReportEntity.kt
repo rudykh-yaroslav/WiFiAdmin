@@ -1,9 +1,10 @@
 package com.honeygoose.wifiadmin.model
 
-import org.springframework.data.annotation.CreatedDate
-import org.springframework.data.annotation.LastModifiedDate
-import java.io.Serializable
-import java.time.LocalDateTime
+import com.honeygoose.wifiadmin.model.client.WiFiData
+import com.vladmihalcea.hibernate.type.json.JsonBinaryType
+import org.hibernate.annotations.Type
+import org.hibernate.annotations.TypeDef
+import org.hibernate.annotations.TypeDefs
 import javax.persistence.Column
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
@@ -14,7 +15,10 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "report")
-class ReportEntity (
+@TypeDefs(
+        TypeDef(name = "jsonb", typeClass = JsonBinaryType::class)
+)
+class ReportEntity(
         @Id
         @Column(name = "id")
         @SequenceGenerator(
@@ -25,8 +29,9 @@ class ReportEntity (
         @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "report_id_generator")
         val id: Long? = null,
 
-        @Column(name = "data", updatable = false)
-        val data: String
+        @Type(type = "jsonb")
+        @Column(name = "data", columnDefinition = "jsonb")
+        val data: WiFiData
 //        ,
 
 //        @Column(name = "created_time", updatable = false)

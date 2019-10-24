@@ -1,13 +1,13 @@
 package com.honeygoose.wifiadmin.model
 
-import java.math.BigInteger
+import com.honeygoose.wifiadmin.model.client.WiFiData
 import java.time.LocalDateTime
 
 
 data class Report(
         val id: Long? = null,
 
-        val data: String,
+        val data: WiFiData,
 
         var createdTime: LocalDateTime? = null,
 

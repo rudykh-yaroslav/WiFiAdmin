@@ -3,3 +3,5 @@ databaseChangeLog:
       file: liquibase/init.sql
   - include:
       file: liquibase/HNG-001.sql
+  - include:
+      file: liquibase/HNG-002.sql
