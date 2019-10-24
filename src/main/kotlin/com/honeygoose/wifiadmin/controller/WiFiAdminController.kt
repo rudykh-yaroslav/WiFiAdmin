@@ -1,6 +1,6 @@
 package com.honeygoose.wifiadmin.controller
 
-import com.honeygoose.wifiadmin.model.Report
+import com.honeygoose.wifiadmin.model.client.WiFiData
 import com.honeygoose.wifiadmin.service.ReportService
 import io.swagger.annotations.Api
 import io.swagger.annotations.ApiOperation
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.ResponseStatus
 import org.springframework.web.bind.annotation.RestController
 import javax.validation.Valid
@@ -32,11 +31,11 @@ class WiFiAdminController(
             @Valid
             @RequestBody
             @ApiParam("Отчет о сканировании WiFi")
-            report: Report
+            wifiData: WiFiData
     ) =
-            LOG.info { "Received Wi Fi Report: ${report}" }
-                    .also { LOG.info { "THIS: ${report.data.wiFiConnection?.ssid }"} }
-                    .also { reportService.putReport(report) }
+            LOG.info { "Received Wi Fi Report: ${wifiData}" }
+                    .also { LOG.info { "THIS: ${wifiData.wiFiConnection?.ssid}" } }
+                    .also { reportService.putReport(wifiData) }
                     .let { "OK" }
 
     @ResponseStatus(OK)
