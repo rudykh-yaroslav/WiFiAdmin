@@ -24,7 +24,8 @@ import org.springframework.security.web.AuthenticationEntryPoint
 class SecurityConfig(
         var provider: AuthenticationProvider
 ) : WebSecurityConfigurerAdapter() {
-    val requestMatcher = OrRequestMatcher(AntPathRequestMatcher("/api/v1/report/**"))
+    val requestMatcher = OrRequestMatcher(AntPathRequestMatcher("/api/v1/report/**"),
+            AntPathRequestMatcher("/api/v1/admin/**"))
 
     override fun configure(auth: AuthenticationManagerBuilder?) {
         auth?.authenticationProvider(provider);
@@ -46,7 +47,8 @@ class SecurityConfig(
                     .authorizeRequests()
                     .requestMatchers(requestMatcher)
                     .authenticated()
-//                    .hasRole("USER")
+                    .requestMatchers(AntPathRequestMatcher("/api/v1/admin/**"))
+                    .hasRole("ADMIN")
                     .and()
                     .csrf().disable()
                     .formLogin().disable()

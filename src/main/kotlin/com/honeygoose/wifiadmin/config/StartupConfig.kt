@@ -2,6 +2,7 @@ package com.honeygoose.wifiadmin.config
 
 import com.honeygoose.wifiadmin.model.Role
 import com.honeygoose.wifiadmin.model.User
+import com.honeygoose.wifiadmin.model.UserRole
 import com.honeygoose.wifiadmin.repo.RoleRepository
 import com.honeygoose.wifiadmin.repo.UserRepository
 import org.springframework.boot.CommandLineRunner
@@ -15,9 +16,9 @@ class StartupConfig {
             roleRepository: RoleRepository,
             userRepository: UserRepository
     ) = CommandLineRunner {
-        val adminRole = Role(name = "ADMIN")
-        val techRole = Role(name = "TECHNICIAN")
-        val userRole = Role(name = "USER")
+        val adminRole = Role(name = UserRole.ADMIN.code)
+        val techRole = Role(name = UserRole.TECHNICIAN.code)
+        val userRole = Role(name = UserRole.USER.code)
         roleRepository.save(adminRole)
         roleRepository.save(techRole)
         roleRepository.save(userRole)
