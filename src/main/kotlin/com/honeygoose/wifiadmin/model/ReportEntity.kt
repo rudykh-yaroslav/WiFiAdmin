@@ -32,13 +32,4 @@ class ReportEntity(
         @Type(type = "jsonb")
         @Column(name = "data", columnDefinition = "jsonb")
         val data: WiFiData
-//        ,
-
-//        @Column(name = "created_time", updatable = false)
-//        @CreatedDate
-//        var createdTime: LocalDateTime? = null,
-//
-//        @Column(name = "modified_time")
-//        @LastModifiedDate
-//        var modifiedTime: LocalDateTime? = null
 )
