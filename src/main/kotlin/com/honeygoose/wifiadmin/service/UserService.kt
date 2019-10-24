@@ -21,7 +21,7 @@ class UserService(var userRepository: UserRepository, var roleRepository: RoleRe
             val token = UUID.randomUUID().toString()
             user.token = token
             userRepository.save(user)
-            return UserData(login = login, token = token) // user dto
+            return UserData(login = login, token = token)
         } catch (e: DataAccessException) {
             throw ServiceException() // e
         }

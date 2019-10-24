@@ -25,7 +25,7 @@ class User(
         @Column(name = "token") // nullable
         var token: String? = null,
 
-        @ManyToMany(cascade = [CascadeType.MERGE], fetch = FetchType.EAGER)
+        @ManyToMany(cascade = [CascadeType.MERGE, CascadeType.REMOVE], fetch = FetchType.EAGER)
         @JoinTable(
                 name = "user_roles",
                 joinColumns = [JoinColumn(

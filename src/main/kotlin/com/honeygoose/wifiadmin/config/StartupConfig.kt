@@ -6,30 +6,26 @@ import com.honeygoose.wifiadmin.model.UserRole
 import com.honeygoose.wifiadmin.repo.RoleRepository
 import com.honeygoose.wifiadmin.repo.UserRepository
 import org.springframework.boot.CommandLineRunner
-import org.springframework.context.annotation.Bean
-import org.springframework.context.annotation.Configuration
+import org.springframework.stereotype.Component
+import org.springframework.transaction.annotation.Transactional
 
-//@Configuration
-class StartupConfig {
-//    @Bean
-    fun init(
-            roleRepository: RoleRepository,
-            userRepository: UserRepository
-    ) = CommandLineRunner {
+@Component
+class StartupConfig(
+        var roleRepository: RoleRepository,
+        var userRepository: UserRepository
+) : CommandLineRunner {
+    @Transactional
+    override fun run(vararg args: String?) {
+        userRepository.deleteAll()
+        roleRepository.deleteAll()
         val adminRole = Role(name = UserRole.ADMIN.code)
         val techRole = Role(name = UserRole.TECHNICIAN.code)
         val userRole = Role(name = UserRole.USER.code)
         roleRepository.save(adminRole)
         roleRepository.save(techRole)
         roleRepository.save(userRole)
-        val someUser = User(login = "someUser", password = "123")
-        someUser.roles = mutableListOf(userRole)
-        userRepository.save(someUser)
-        val someAdmin = User(login = "someAdmin", password = "456")
+        val someAdmin = User(login = "someAdmin", password = "VeryStrong123")
         someAdmin.roles = mutableListOf(adminRole)
         userRepository.save(someAdmin)
-        val someTechnician = User(login = "someTechnician", password = "789")
-        someTechnician.roles = mutableListOf(techRole)
-        userRepository.save(someTechnician)
     }
 }

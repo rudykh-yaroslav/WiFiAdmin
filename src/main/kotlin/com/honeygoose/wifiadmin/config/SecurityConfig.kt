@@ -1,5 +1,6 @@
 package com.honeygoose.wifiadmin.config
 
+import com.honeygoose.wifiadmin.model.UserRole
 import com.honeygoose.wifiadmin.security.AuthenticationFilter
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -45,10 +46,8 @@ class SecurityConfig(
                     .authenticationProvider(provider)
                     .addFilterBefore(authenticationFilter(), AnonymousAuthenticationFilter::class.java)
                     .authorizeRequests()
-                    .requestMatchers(requestMatcher)
-                    .authenticated()
-                    .requestMatchers(AntPathRequestMatcher("/api/v1/admin/**"))
-                    .hasRole("ADMIN")
+                    .antMatchers("/api/v1/admin/**").hasAuthority(UserRole.ADMIN.code)
+                    .anyRequest().authenticated()
                     .and()
                     .csrf().disable()
                     .formLogin().disable()
