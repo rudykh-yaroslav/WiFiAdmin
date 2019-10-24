@@ -1,6 +1,8 @@
 package com.honeygoose.wifiadmin.controller
 
 import com.honeygoose.wifiadmin.model.LoginData
+import com.honeygoose.wifiadmin.model.RegistrationData
+import com.honeygoose.wifiadmin.model.UserRole
 import com.honeygoose.wifiadmin.model.client.WiFiData
 import com.honeygoose.wifiadmin.service.ReportService
 import com.honeygoose.wifiadmin.service.UserService
@@ -26,6 +28,7 @@ class WiFiAdminController(
         private val reportService: ReportService,
         private val userService: UserService
 ) {
+    val roles = UserRole.values().map { it.code }.toList()
 
     @ResponseStatus(CREATED)
     @PostMapping("/report")
@@ -51,7 +54,6 @@ class WiFiAdminController(
             LOG.info { "Requested Wi Fi Report" }
                     .let { reportService.getReport(id) }
 
-
     @ResponseStatus(OK)
     @PostMapping("/login")
     @ApiOperation(value = "Авторизоваться", response = String::class)
@@ -65,6 +67,24 @@ class WiFiAdminController(
                     .let {
                         userService.login(loginData.login, loginData.password)
                     }
+
+    @ResponseStatus(OK)
+    @PostMapping("/admin/create")
+    @ApiOperation(value = "Создание пользователя", response = String::class)
+    fun createUser(
+            @Valid
+            @RequestBody
+            @ApiParam("Регистрационные данные")
+            registrationData: RegistrationData
+    ): String {
+        if (!roles.contains(registrationData.role)) {
+            return "Registration of user with role '${registrationData.role}' is not possible"
+        }
+        return LOG.info { "Register user" }
+                .let {
+                    userService.createUser(registrationData)
+                }
+    }
 
     companion object {
         private val LOG = KotlinLogging.logger { }
