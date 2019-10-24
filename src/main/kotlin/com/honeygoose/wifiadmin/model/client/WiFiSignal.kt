@@ -1,8 +1,11 @@
 package com.honeygoose.wifiadmin.model.client
 
-data class WiFiSignal(val primaryFrequency: Int,
-                      val centerFrequency: Int,
-                      val wiFiWidth: WiFiWidth,
-                      val level: Int,
-                      val is80211mc: Boolean
+import com.fasterxml.jackson.annotation.JsonProperty
+
+data class WiFiSignal(val primaryFrequency: Int? = null,
+                      val centerFrequency: Int? = null,
+                      val wiFiWidth: WiFiWidth? = null,
+                      val level: Int? = null//,
+//                      @JsonProperty("is80211mc")
+//                      val is80211mc: Boolean? = null
 )

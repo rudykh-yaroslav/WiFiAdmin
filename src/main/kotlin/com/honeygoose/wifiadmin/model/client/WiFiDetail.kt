@@ -1,9 +1,13 @@
 package com.honeygoose.wifiadmin.model.client
 
+import com.fasterxml.jackson.annotation.JsonProperty
+
 data class WiFiDetail(
-        private val SSID: String,
-        val bssid: String,
-        val capabilities: String,
-        val wiFiSignal: WiFiSignal,
-        val wiFiAdditional: WiFiAdditional,
-        val timestamp: Long)
+        @JsonProperty("SSID")
+        val ssid: String? = null,
+        @JsonProperty("BSSID")
+        val bssid: String? = null,
+        val capabilities: String? = null,
+        val wiFiSignal: WiFiSignal? = null,
+        val wiFiAdditional: WiFiAdditional? = null,
+        val timestamp: Long? = null)

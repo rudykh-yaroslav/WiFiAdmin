@@ -1,0 +1,1210 @@
+{
+  "wiFiConnection": {
+    "BSSID": "90:3a:72:26:3a:ed",
+    "SSID": "Sberbank",
+    "ipAddress": "172.30.18.178",
+    "linkSpeed": 433
+  },
+  "wiFiDetails": [
+    {
+      "BSSID": "00:ec:0a:62:b3:4d",
+      "SSID": "Redmi",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751824,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2462,
+        "is80211mc": false,
+        "level": -57,
+        "primaryFrequency": 2462,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "04:b1:67:01:d8:ad",
+      "SSID": "Nutwork",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751765,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2462,
+        "is80211mc": false,
+        "level": -56,
+        "primaryFrequency": 2462,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "06:1b:6d:de:f3:24",
+      "SSID": "LG K10 (2017)_1206",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752455,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2437,
+        "is80211mc": false,
+        "level": -74,
+        "primaryFrequency": 2437,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "0a:c5:e1:ae:a6:a9",
+      "SSID": "Raketa",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752012,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2462,
+        "is80211mc": false,
+        "level": -65,
+        "primaryFrequency": 2462,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "1c:49:7b:8a:d5:0d",
+      "SSID": "Andrew\u0027s yota",
+      "capabilities": "[WPA2-PSK-CCMP][ESS][WPS]",
+      "children": [],
+      "timestamp": 15948751334,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2452,
+        "is80211mc": false,
+        "level": -55,
+        "primaryFrequency": 2462,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_40"
+      }
+    },
+    {
+      "BSSID": "28:6c:07:44:30:c8",
+      "SSID": "FIKSIKI",
+      "capabilities": "[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP][ESS][WPS]",
+      "children": [],
+      "timestamp": 15948751738,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2447,
+        "is80211mc": false,
+        "level": -59,
+        "primaryFrequency": 2447,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "28:6c:07:44:30:c9",
+      "SSID": "FIKSIKI_5G",
+      "capabilities": "[WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP][ESS][WPS]",
+      "children": [],
+      "timestamp": 15948752102,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5775,
+        "is80211mc": false,
+        "level": -67,
+        "primaryFrequency": 5805,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "5e:ea:1d:7d:21:fe",
+      "SSID": "DIRECT-fe-HP M426 LaserJet",
+      "capabilities": "[WPA2-PSK-CCMP][ESS][WPS]",
+      "children": [],
+      "timestamp": 15948752418,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2412,
+        "is80211mc": false,
+        "level": -73,
+        "primaryFrequency": 2412,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "62:01:94:19:21:48",
+      "SSID": "MicroPython-192148",
+      "capabilities": "[WPA2-PSK-CCMP+TKIP][WPA-PSK-CCMP+TKIP][ESS]",
+      "children": [],
+      "timestamp": 15948752074,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2437,
+        "is80211mc": false,
+        "level": -61,
+        "primaryFrequency": 2437,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "62:d8:19:27:fa:1b",
+      "SSID": "arboretum",
+      "capabilities": "[WPA2-PSK-CCMP][ESS][WPS]",
+      "children": [],
+      "timestamp": 15948751916,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2462,
+        "is80211mc": false,
+        "level": -63,
+        "primaryFrequency": 2462,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "68:a8:6d:36:2a:c2",
+      "SSID": "lalala",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752486,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5230,
+        "is80211mc": false,
+        "level": -78,
+        "primaryFrequency": 5240,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_40"
+      }
+    },
+    {
+      "BSSID": "6e:00:6b:21:10:1f",
+      "SSID": "AndroidAP101F",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752044,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2462,
+        "is80211mc": false,
+        "level": -63,
+        "primaryFrequency": 2462,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:24:0c",
+      "SSID": "Guest_39r7hn75n24",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752198,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -74,
+        "primaryFrequency": 5200,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:24:0d",
+      "SSID": "Sberbank",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752168,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -74,
+        "primaryFrequency": 5200,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:25:bc",
+      "SSID": "Guest_39r7hn75n24",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752751,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5290,
+        "is80211mc": false,
+        "level": -77,
+        "primaryFrequency": 5320,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:25:bd",
+      "SSID": "Sberbank",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752721,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5290,
+        "is80211mc": false,
+        "level": -78,
+        "primaryFrequency": 5320,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:33:8c",
+      "SSID": "Guest_39r7hn75n24",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752287,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -75,
+        "primaryFrequency": 5180,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:33:8d",
+      "SSID": "Sberbank",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752258,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -75,
+        "primaryFrequency": 5180,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:3a:ec",
+      "SSID": "Guest_39r7hn75n24",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751247,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -53,
+        "primaryFrequency": 5220,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:3a:ed",
+      "SSID": "Sberbank",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751210,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -54,
+        "primaryFrequency": 5220,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:3b:dc",
+      "SSID": "Guest_39r7hn75n24",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752656,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -78,
+        "primaryFrequency": 5240,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:3b:dd",
+      "SSID": "Sberbank",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752627,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -79,
+        "primaryFrequency": 5240,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:3d:4c",
+      "SSID": "Guest_39r7hn75n24",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751616,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5290,
+        "is80211mc": false,
+        "level": -60,
+        "primaryFrequency": 5280,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:3d:4d",
+      "SSID": "Sberbank",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751420,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5290,
+        "is80211mc": false,
+        "level": -60,
+        "primaryFrequency": 5280,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:3e:9c",
+      "SSID": "Guest_39r7hn75n24",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752842,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5690,
+        "is80211mc": false,
+        "level": -82,
+        "primaryFrequency": 5680,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:26:3f:cc",
+      "SSID": "Guest_39r7hn75n24",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752903,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5290,
+        "is80211mc": false,
+        "level": -90,
+        "primaryFrequency": 5300,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:66:3e:9c",
+      "SSID": "Sberbank",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752809,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5690,
+        "is80211mc": false,
+        "level": -82,
+        "primaryFrequency": 5680,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:a6:25:bc",
+      "SSID": "",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752690,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5290,
+        "is80211mc": false,
+        "level": -78,
+        "primaryFrequency": 5320,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:a6:3a:ec",
+      "SSID": "",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751305,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -53,
+        "primaryFrequency": 5220,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:a6:3b:dc",
+      "SSID": "GRKK",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752593,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -78,
+        "primaryFrequency": 5240,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:a6:3d:4c",
+      "SSID": "",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751850,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5290,
+        "is80211mc": false,
+        "level": -62,
+        "primaryFrequency": 5280,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:a6:3f:cc",
+      "SSID": "Sberbank",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752873,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5290,
+        "is80211mc": false,
+        "level": -90,
+        "primaryFrequency": 5300,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:e6:24:0c",
+      "SSID": "GRKK",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752228,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -73,
+        "primaryFrequency": 5200,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:e6:25:bc",
+      "SSID": "GRKK",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752781,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5290,
+        "is80211mc": false,
+        "level": -78,
+        "primaryFrequency": 5320,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:e6:33:8c",
+      "SSID": "GRKK",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752137,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -75,
+        "primaryFrequency": 5180,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:e6:3a:ec",
+      "SSID": "GRKK",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751277,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5210,
+        "is80211mc": false,
+        "level": -53,
+        "primaryFrequency": 5220,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "90:3a:72:e6:3d:4c",
+      "SSID": "GRKK",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751650,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5290,
+        "is80211mc": false,
+        "level": -59,
+        "primaryFrequency": 5280,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "98:09:cf:0a:80:9b",
+      "SSID": "OnePlus3_A",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751710,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2462,
+        "is80211mc": false,
+        "level": -60,
+        "primaryFrequency": 2462,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "a0:f3:c1:31:d9:f9",
+      "SSID": "OpenWrt",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751947,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2437,
+        "is80211mc": false,
+        "level": -65,
+        "primaryFrequency": 2437,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "a0:f3:c1:57:26:8e",
+      "SSID": "Hyperborian",
+      "capabilities": "[WPA2-PSK-CCMP][ESS][WPS]",
+      "children": [],
+      "timestamp": 15948751681,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2427,
+        "is80211mc": false,
+        "level": -60,
+        "primaryFrequency": 2437,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_40"
+      }
+    },
+    {
+      "BSSID": "b4:18:d1:e3:29:19",
+      "SSID": "LSL.SOUND",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752935,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5190,
+        "is80211mc": false,
+        "level": -86,
+        "primaryFrequency": 5180,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_40"
+      }
+    },
+    {
+      "BSSID": "c4:d9:87:e1:70:4e",
+      "SSID": "c0mputer",
+      "capabilities": "[WPA2-PSK-CCMP][ESS][WPS]",
+      "children": [],
+      "timestamp": 15948751363,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2412,
+        "is80211mc": false,
+        "level": -55,
+        "primaryFrequency": 2412,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "cc:9f:7a:ab:fd:a4",
+      "SSID": "Nokia 8",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751879,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5690,
+        "is80211mc": false,
+        "level": -64,
+        "primaryFrequency": 5660,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "d4:c1:9e:3e:79:9c",
+      "SSID": "Guest_39r7hn75n24",
+      "capabilities": "[WPA2-PSK+FT/PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752352,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5690,
+        "is80211mc": false,
+        "level": -72,
+        "primaryFrequency": 5660,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "d4:c1:9e:3e:79:9d",
+      "SSID": "Sberbank",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752319,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5690,
+        "is80211mc": false,
+        "level": -72,
+        "primaryFrequency": 5660,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "d4:c1:9e:fe:79:9c",
+      "SSID": "GRKK",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948752386,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 5690,
+        "is80211mc": false,
+        "level": -72,
+        "primaryFrequency": 5660,
+        "wiFiBand": "GHZ5",
+        "wiFiWidth": "MHZ_80"
+      }
+    },
+    {
+      "BSSID": "da:0f:99:0e:b0:11",
+      "SSID": "DIRECT-11-HP M130 LaserJet",
+      "capabilities": "[WPA2-PSK-CCMP][ESS][WPS]",
+      "children": [],
+      "timestamp": 15948751978,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2437,
+        "is80211mc": false,
+        "level": -65,
+        "primaryFrequency": 2437,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "e4:7d:eb:1a:f4:5b",
+      "SSID": "xs-yota",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751146,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2447,
+        "is80211mc": false,
+        "level": -39,
+        "primaryFrequency": 2447,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "f4:f5:db:d2:eb:17",
+      "SSID": "blackowl",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751796,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2462,
+        "is80211mc": false,
+        "level": -58,
+        "primaryFrequency": 2462,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    },
+    {
+      "BSSID": "f8:35:dd:0a:0e:89",
+      "SSID": "Merkava4",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "children": [],
+      "timestamp": 15948751391,
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "BSSID": "",
+          "SSID": "",
+          "ipAddress": "",
+          "linkSpeed": -1
+        }
+      },
+      "wiFiSignal": {
+        "centerFrequency": 2412,
+        "is80211mc": false,
+        "level": -52,
+        "primaryFrequency": 2412,
+        "wiFiBand": "GHZ2",
+        "wiFiWidth": "MHZ_20"
+      }
+    }
+  ]
+}

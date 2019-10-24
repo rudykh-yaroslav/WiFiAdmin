@@ -1,4 +1,4 @@
 package com.honeygoose.wifiadmin.model.client
 
-data class WiFiChannels(private val wiFiRange: Pair<Int, Int>,
-                        private val wiFiChannelPairs: List<Pair<WiFiChannel, WiFiChannel>>)
+data class WiFiChannels(val wiFiRange: Pair<Int, Int>? = null,
+                        val wiFiChannelPairs: List<Pair<WiFiChannel, WiFiChannel>>? = null)

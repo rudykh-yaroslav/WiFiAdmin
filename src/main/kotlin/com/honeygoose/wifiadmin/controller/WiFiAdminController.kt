@@ -34,8 +34,9 @@ class WiFiAdminController(
             @ApiParam("Отчет о сканировании WiFi")
             report: Report
     ) =
-            LOG.info { "Received Wi Fi Report" }.
-                    also { reportService.putReport(report) }
+            LOG.info { "Received Wi Fi Report: ${report}" }
+                    .also { LOG.info { "THIS: ${report.data.wiFiConnection?.ssid }"} }
+                    .also { reportService.putReport(report) }
                     .let { "OK" }
 
     @ResponseStatus(OK)
