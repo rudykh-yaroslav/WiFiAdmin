@@ -15,19 +15,19 @@ class StartupConfig {
             roleRepository: RoleRepository,
             userRepository: UserRepository
     ) = CommandLineRunner {
-        val adminRole = Role(name = "admin")
-        val techRole = Role(name = "technician")
-        val userRole = Role(name = "user")
+        val adminRole = Role(name = "ADMIN")
+        val techRole = Role(name = "TECHNICIAN")
+        val userRole = Role(name = "USER")
         roleRepository.save(adminRole)
         roleRepository.save(techRole)
         roleRepository.save(userRole)
-        val someUser = User(login = "iAmUser", password = "123")
+        val someUser = User(login = "someUser", password = "123")
         someUser.roles = mutableListOf(userRole)
         userRepository.save(someUser)
-        val someAdmin = User(login = "iAmAdmin", password = "456")
+        val someAdmin = User(login = "someAdmin", password = "456")
         someAdmin.roles = mutableListOf(adminRole)
         userRepository.save(someAdmin)
-        val someTechnician = User(login = "iAmTechnician", password = "789")
+        val someTechnician = User(login = "someTechnician", password = "789")
         someTechnician.roles = mutableListOf(techRole)
         userRepository.save(someTechnician)
     }
