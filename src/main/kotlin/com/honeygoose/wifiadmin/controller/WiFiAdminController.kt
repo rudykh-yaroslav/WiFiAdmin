@@ -3,7 +3,7 @@ package com.honeygoose.wifiadmin.controller
 import com.honeygoose.wifiadmin.model.LoginData
 import com.honeygoose.wifiadmin.model.RegistrationData
 import com.honeygoose.wifiadmin.model.UserRole
-import com.honeygoose.wifiadmin.model.client.WiFiData
+import com.honeygoose.wifiadmin.model.client.Report
 import com.honeygoose.wifiadmin.service.ReportService
 import com.honeygoose.wifiadmin.service.UserService
 import io.swagger.annotations.Api
@@ -37,11 +37,11 @@ class WiFiAdminController(
             @Valid
             @RequestBody
             @ApiParam("Отчет о сканировании WiFi")
-            wifiData: WiFiData
+            report: Report
     ) =
-            LOG.info { "Received Wi Fi Report: ${wifiData}" }
-                    .also { LOG.info { "THIS: ${wifiData.wiFiConnection?.ssid}" } }
-                    .also { reportService.putReport(wifiData) }
+            LOG.info { "Received Report: ${report}" }
+                    .also { LOG.info { "THIS: ${report.wiFiData.wiFiConnection?.ssid}" } }
+                    .also { reportService.putReport(report) }
                     .let { "OK" }
 
     @ResponseStatus(OK)

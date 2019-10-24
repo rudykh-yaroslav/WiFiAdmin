@@ -3,8 +3,8 @@ package com.honeygoose.wifiadmin.service
 import com.honeygoose.wifiadmin.exception.ServiceException
 import com.honeygoose.wifiadmin.model.RegistrationData
 import com.honeygoose.wifiadmin.model.User
-import com.honeygoose.wifiadmin.repo.RoleRepository
 import com.honeygoose.wifiadmin.model.client.UserData
+import com.honeygoose.wifiadmin.repo.RoleRepository
 import com.honeygoose.wifiadmin.repo.UserRepository
 import org.springframework.dao.DataAccessException
 import org.springframework.stereotype.Service
@@ -28,13 +28,9 @@ class UserService(var userRepository: UserRepository, var roleRepository: RoleRe
     }
 
     fun findByToken(token: String): User { // user dto
-        try {
-            val user = userRepository.findByToken(token)
-            // map
-            return user
-        } catch (e: DataAccessException) {
-            throw ServiceException()
-        }
+        val user = userRepository.findByToken(token)
+        // map
+        return user
     }
 
     @Transactional

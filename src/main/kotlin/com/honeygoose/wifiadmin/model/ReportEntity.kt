@@ -1,5 +1,6 @@
 package com.honeygoose.wifiadmin.model
 
+import com.honeygoose.wifiadmin.model.client.DeviceDetails
 import com.honeygoose.wifiadmin.model.client.WiFiData
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType
 import org.hibernate.annotations.Type
@@ -33,5 +34,13 @@ class ReportEntity(
 
         @Type(type = "jsonb")
         @Column(name = "data", columnDefinition = "jsonb")
-        val data: WiFiData
+        val data: WiFiData,
+
+        @Type(type = "jsonb")
+        @Column(name = "deviceDetails", columnDefinition = "jsonb")
+        val deviceDetails: DeviceDetails,
+
+        val lat: Double? = null,
+        val lon: Double? = null,
+        val address: String? = null
 )

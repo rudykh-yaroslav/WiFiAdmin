@@ -1,15 +1,27 @@
 package com.honeygoose.wifiadmin.service.mapping
 
 import com.honeygoose.wifiadmin.model.ReportEntity
-import com.honeygoose.wifiadmin.model.client.WiFiData
+import com.honeygoose.wifiadmin.model.client.Report
 import org.springframework.stereotype.Service
 
 @Service
 class ReportMapper {
-    fun map(source: WiFiData): ReportEntity = ReportEntity(
-            data = source,
-            login = source.login
+    fun map(report: Report): ReportEntity = ReportEntity(
+            login = report.login,
+            data = report.wiFiData,
+            deviceDetails = report.deviceDetails,
+            lat = report.lat,
+            lon = report.lon,
+            address = report.address
     )
 
-    fun map(source: ReportEntity): WiFiData = source.data
+    fun map(source: ReportEntity): Report =
+            Report(
+                    login = source.login,
+                    wiFiData = source.data,
+                    deviceDetails = source.deviceDetails,
+                    lat = source.lat,
+                    lon = source.lon,
+                    address = source.address
+            )
 }
