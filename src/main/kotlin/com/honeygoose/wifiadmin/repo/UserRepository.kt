@@ -11,4 +11,8 @@ interface UserRepository : JpaRepository<User, Long> {
      * Login is unique so method must return only one user.
      */
     fun findByLogin(login: String): User
+
+    fun findByLoginAndPassword(login: String, password: String): User
+
+    fun findByToken(token: String): User
 }

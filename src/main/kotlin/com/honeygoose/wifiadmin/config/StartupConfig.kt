@@ -8,9 +8,9 @@ import org.springframework.boot.CommandLineRunner
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
-@Configuration
+//@Configuration
 class StartupConfig {
-    @Bean
+//    @Bean
     fun init(
             roleRepository: RoleRepository,
             userRepository: UserRepository

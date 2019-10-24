@@ -1,14 +1,14 @@
 CREATE TABLE public.user
 (
     id       bigint PRIMARY KEY,
-    login    varchar NOT NULL UNIQUE,
+    login    varchar NOT NULL,
     password varchar NOT NULL
 );
 
 CREATE TABLE public.role
 (
     id   bigint PRIMARY KEY,
-    name varchar NOT NULL UNIQUE
+    name varchar NOT NULL
 );
 
 CREATE TABLE public.user_roles

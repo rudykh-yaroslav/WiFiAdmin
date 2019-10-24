@@ -21,6 +21,9 @@ class User(
         @Column(name = "password")
         var password: String = "",
 
+        @Column(name = "token") // nullable
+        var token: String? = null,
+
         @ManyToMany(cascade = [CascadeType.MERGE])
         @JoinTable(
                 name = "user_roles",
