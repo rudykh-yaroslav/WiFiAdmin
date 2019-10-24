@@ -18,23 +18,20 @@ import org.springframework.http.HttpStatus
 import org.springframework.security.web.authentication.HttpStatusEntryPoint
 import org.springframework.security.web.AuthenticationEntryPoint
 
-
-
-
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 class SecurityConfig(
         var provider: AuthenticationProvider
 ) : WebSecurityConfigurerAdapter() {
-    val requestMatcher = OrRequestMatcher(AntPathRequestMatcher("/api/v1/**"))
+    val requestMatcher = OrRequestMatcher(AntPathRequestMatcher("/api/v1/report/**"))
 
     override fun configure(auth: AuthenticationManagerBuilder?) {
         auth?.authenticationProvider(provider);
     }
 
     override fun configure(web: WebSecurity?) {
-        web?.ignoring()?.antMatchers("/login/**")
+        web?.ignoring()?.antMatchers("/api/v1/login/**")
     }
 
     override fun configure(http: HttpSecurity?) {
@@ -49,6 +46,7 @@ class SecurityConfig(
                     .authorizeRequests()
                     .requestMatchers(requestMatcher)
                     .authenticated()
+//                    .hasRole("USER")
                     .and()
                     .csrf().disable()
                     .formLogin().disable()

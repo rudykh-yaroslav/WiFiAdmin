@@ -53,7 +53,7 @@ class WiFiAdminController(
 
 
     @ResponseStatus(OK)
-    @PostMapping("/login/")
+    @PostMapping("/login")
     @ApiOperation(value = "Авторизоваться", response = String::class)
     fun login(
             @Valid
