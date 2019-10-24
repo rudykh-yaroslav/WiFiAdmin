@@ -24,7 +24,3 @@ spring:
       driver-class-name: org.postgresql.Driver
   liquibase:
     change-log: classpath:liquibase/changelog.yml
-  security:
-    user:
-      name: somebody
-      password: q1w2e3r4
