@@ -1,7 +1,9 @@
 package com.honeygoose.wifiadmin.controller
 
+import com.honeygoose.wifiadmin.model.LoginData
 import com.honeygoose.wifiadmin.model.client.WiFiData
 import com.honeygoose.wifiadmin.service.ReportService
+import com.honeygoose.wifiadmin.service.UserService
 import io.swagger.annotations.Api
 import io.swagger.annotations.ApiOperation
 import io.swagger.annotations.ApiParam
@@ -21,7 +23,8 @@ import javax.validation.Valid
 @RequestMapping("/api/v1")
 @Api(description = "API Wi Fi Admin")
 class WiFiAdminController(
-        private val reportService: ReportService
+        private val reportService: ReportService,
+        private val userService: UserService
 ) {
 
     @ResponseStatus(CREATED)
@@ -47,6 +50,21 @@ class WiFiAdminController(
     ) =
             LOG.info { "Requested Wi Fi Report" }
                     .let { reportService.getReport(id) }
+
+
+    @ResponseStatus(OK)
+    @PostMapping("/login/")
+    @ApiOperation(value = "Авторизоваться", response = String::class)
+    fun login(
+            @Valid
+            @RequestBody
+            @ApiParam("Аутентификаицонные данные")
+            loginData: LoginData
+    ) =
+            LOG.info { "Authorized" }
+                    .let {
+                        userService.login(loginData.login, loginData.password)
+                    }
 
     companion object {
         private val LOG = KotlinLogging.logger { }
