@@ -7,7 +7,8 @@ import org.springframework.stereotype.Service
 @Service
 class ReportMapper {
     fun map(source: WiFiData): ReportEntity = ReportEntity(
-            data = source
+            data = source,
+            login = source.login
     )
 
     fun map(source: ReportEntity): WiFiData = source.data

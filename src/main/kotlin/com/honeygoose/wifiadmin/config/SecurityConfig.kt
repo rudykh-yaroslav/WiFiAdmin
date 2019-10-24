@@ -1,5 +1,6 @@
 package com.honeygoose.wifiadmin.config
 
+import com.honeygoose.wifiadmin.model.UserRole
 import com.honeygoose.wifiadmin.security.AuthenticationFilter
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -18,23 +19,21 @@ import org.springframework.http.HttpStatus
 import org.springframework.security.web.authentication.HttpStatusEntryPoint
 import org.springframework.security.web.AuthenticationEntryPoint
 
-
-
-
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 class SecurityConfig(
         var provider: AuthenticationProvider
 ) : WebSecurityConfigurerAdapter() {
-    val requestMatcher = OrRequestMatcher(AntPathRequestMatcher("/api/v1/**"))
+    val requestMatcher = OrRequestMatcher(AntPathRequestMatcher("/api/v1/report/**"),
+            AntPathRequestMatcher("/api/v1/admin/**"))
 
     override fun configure(auth: AuthenticationManagerBuilder?) {
         auth?.authenticationProvider(provider);
     }
 
     override fun configure(web: WebSecurity?) {
-        web?.ignoring()?.antMatchers("/login/**")
+        web?.ignoring()?.antMatchers("/api/v1/login/**")
     }
 
     override fun configure(http: HttpSecurity?) {
@@ -47,8 +46,8 @@ class SecurityConfig(
                     .authenticationProvider(provider)
                     .addFilterBefore(authenticationFilter(), AnonymousAuthenticationFilter::class.java)
                     .authorizeRequests()
-                    .requestMatchers(requestMatcher)
-                    .authenticated()
+                    .antMatchers("/api/v1/admin/**").hasAuthority(UserRole.ADMIN.code)
+                    .anyRequest().authenticated()
                     .and()
                     .csrf().disable()
                     .formLogin().disable()

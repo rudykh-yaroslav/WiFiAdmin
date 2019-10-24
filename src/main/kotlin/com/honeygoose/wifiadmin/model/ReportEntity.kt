@@ -29,6 +29,8 @@ class ReportEntity(
         @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "report_id_generator")
         val id: Long? = null,
 
+        val login: String,
+
         @Type(type = "jsonb")
         @Column(name = "data", columnDefinition = "jsonb")
         val data: WiFiData
