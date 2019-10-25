@@ -29,7 +29,7 @@ class SpeedTestController {
     @PostMapping("/download")
     @ApiOperation(value = "Тестирование скорости скачивания файла", response = String::class)
     fun download(
-            @RequestParam("timestamp") timestamp: Timestamp
+            @RequestParam("timestamp") timestamp: Long
     ) = LOG.info { "downloaded" }
             .let {
                 FilePlusTimestamp(
@@ -40,7 +40,7 @@ class SpeedTestController {
 
     data class FilePlusTimestamp(
             val file: ByteArray,
-            val timestamp: Timestamp
+            val timestamp: Long
     )
 
     companion object {

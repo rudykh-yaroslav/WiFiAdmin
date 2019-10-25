@@ -4,6 +4,7 @@ import com.honeygoose.wifiadmin.model.UserRole
 import com.honeygoose.wifiadmin.security.AuthenticationFilter
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.http.HttpMethod
 import org.springframework.http.HttpStatus
 import org.springframework.security.authentication.AuthenticationProvider
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
@@ -39,7 +40,8 @@ class SecurityConfig(
                 ?.antMatchers("/webjars/springfox-swagger-ui/**")
                 ?.antMatchers("/swagger-resources/**")
                 ?.antMatchers("/v2/api-docs")
-                ?.antMatchers("/speedtest/**")
+                ?.antMatchers(HttpMethod.POST,"/speedtest/**")
+                ?.antMatchers(HttpMethod.POST,"/speedtest/download")
     }
 
     override fun configure(http: HttpSecurity?) {
