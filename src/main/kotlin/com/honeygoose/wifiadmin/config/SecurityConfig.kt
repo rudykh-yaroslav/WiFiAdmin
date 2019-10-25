@@ -47,6 +47,7 @@ class SecurityConfig(
                     .addFilterBefore(authenticationFilter(), AnonymousAuthenticationFilter::class.java)
                     .authorizeRequests()
                     .antMatchers("/api/v1/admin/**").hasAuthority(UserRole.ADMIN.code)
+//                    .antMatchers("")
                     .anyRequest().authenticated()
                     .and()
                     .csrf().disable()
