@@ -33,7 +33,9 @@ class SecurityConfig(
     }
 
     override fun configure(web: WebSecurity?) {
-        web?.ignoring()?.antMatchers("/api/v1/login/**", "/speedtest/**")
+        web?.ignoring()
+                ?.antMatchers("/api/v1/login/**")
+                ?.antMatchers("/speedtest/**")
     }
 
     override fun configure(http: HttpSecurity?) {
