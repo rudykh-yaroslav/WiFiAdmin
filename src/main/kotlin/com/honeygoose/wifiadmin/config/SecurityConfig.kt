@@ -35,6 +35,10 @@ class SecurityConfig(
     override fun configure(web: WebSecurity?) {
         web?.ignoring()
                 ?.antMatchers("/api/v1/login/**")
+                ?.antMatchers("/swagger-ui.html")
+                ?.antMatchers("/webjars/springfox-swagger-ui/**")
+                ?.antMatchers("/swagger-resources/**")
+                ?.antMatchers("/v2/api-docs")
                 ?.antMatchers("/speedtest/**")
     }
 

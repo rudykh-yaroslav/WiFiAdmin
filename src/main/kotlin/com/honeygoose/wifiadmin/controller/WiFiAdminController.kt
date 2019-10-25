@@ -55,6 +55,13 @@ class WiFiAdminController(
                     .let { reportService.getReport(id) }
 
     @ResponseStatus(OK)
+    @GetMapping("/report/all")
+    @ApiOperation(value = "Запросить все отчеты", response = String::class)
+    fun getReports() =
+            LOG.info { "Requested Wi Fi Reports" }
+                    .let { reportService.getReports() }
+
+    @ResponseStatus(OK)
     @PostMapping("/login")
     @ApiOperation(value = "Авторизоваться", response = String::class)
     fun login(

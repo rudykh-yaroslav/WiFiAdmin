@@ -24,3 +24,7 @@ spring:
       driver-class-name: org.postgresql.Driver
   liquibase:
     change-log: classpath:liquibase/changelog.yml
+
+app:
+  root-package: com.honeygoose.wifiadmin
+  base-path: /
